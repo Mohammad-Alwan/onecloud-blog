@@ -34,13 +34,13 @@ sudo cp -v path/to/source /etc/ssl/
 ### Check SSL expiration in the target server 
 === "PEM"
     ```bash
-    openssl x509 -noout -in pegadaian.pem -dates
-    openssl x509 -noout -in pegadaian.pem -text
+    openssl x509 -noout -in cert.pem -dates
+    openssl x509 -noout -in cert.pem -text
     ```
 === "JKS"
     ```bash
     (for cert java)
-    keytool -list -v -keystore pegadaian.jks | less
+    keytool -list -v -keystore cert.jks | less
     ```
 
 ### Restart or Reload Service
