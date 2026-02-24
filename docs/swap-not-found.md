@@ -33,16 +33,16 @@ The RHEL operating system is stuck during the boot process because `/dev/os/lv_s
    ```
 4. Mount the devtmpfs filesystem to the /dev directory 
    ```bash
-    mount -t devtmpfs devtmpfs /dev
+   mount -t devtmpfs devtmpfs /dev
    ```
 5. Mount the boot partition to the /boot directory.
    ```bash 
-    mount /dev/sda3 /boot
-    ```
+   mount /dev/sda3 /boot
+   ```
 
 6. Change boot entry parameters in the file /boot/loader/entries/*6.12.0-124.8.1.el10_1.x86_64.conf
 
-    Before
+!!! failure "Before"
     ```bash
     title Red Hat Enterprise Linux (6.12.0-124.8.1.el10_1.x86_64) 10.1 (Coughlan)
     version 6.12.0-124.8.1.el10_1.x86_64
@@ -53,7 +53,7 @@ The RHEL operating system is stuck during the boot process because `/dev/os/lv_s
     grub_arg --unrestricted
     grub_class rhel
     ```
-    AFTER
+!!! success "After"
     ```bash
     title Red Hat Enterprise Linux (6.12.0-124.8.1.el10_1.x86_64) 10.1 (Coughlan)
     version 6.12.0-124.8.1.el10_1.x86_64
