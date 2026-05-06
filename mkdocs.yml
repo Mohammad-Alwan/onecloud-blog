@@ -10,6 +10,7 @@ theme:
     - navigation.footer
     - content.code.copy
     - content.tabs.link
+    - content.code.annotate
   palette:
     # Dark Mode
     - scheme: slate
