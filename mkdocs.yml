@@ -37,7 +37,8 @@ nav:
     - os-failed.md
     - swap-not-found.md
     - create-user-sftp.md
-    
+    - create-gpg-key.md
+
 markdown_extensions:
   - attr_list
   - pymdownx.emoji:
