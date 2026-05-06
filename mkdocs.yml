@@ -38,6 +38,7 @@ nav:
     - swap-not-found.md
     - create-user-sftp.md
     - create-gpg-key.md
+    - exec-jar-custom-java.md
 
 markdown_extensions:
   - attr_list
