@@ -2,7 +2,7 @@
 date: '2026-05-04T22:35:01+07:00'
 ---
 # Creating new GPG Key
-## Initiating Key-Pair Generation 
+#### Initiating Key-Pair Generation 
 1. To initiate key-pair generation interactive console, run the following command:
 
     ```bash
@@ -62,22 +62,22 @@ date: '2026-05-04T22:35:01+07:00'
     ```
 
 
-### List Public Keys (to get KEYID)
+#### List Public Keys (to get KEYID)
 ```bash
 gpg --list-key
 ```
 
-### Export GPG Public Key (ASCII-Armored Format)
+#### Export GPG Public Key (ASCII-Armored Format)
 ```bash
 gpg --armor --export <KEYID> > /path/to/source/<gpg-pub-file>
 ```
 
-### Export GPG Private Key (ASCII-Armored Format)
+#### Export GPG Private Key (ASCII-Armored Format)
 ```bash
 gpg --armor --export-secret-keys <KEYID> > /path/to/source/<gpg-private-file>
 ```
 
-### Create GPG Passphrase as File
+#### Create GPG Passphrase as File
 
 ```
 # sample generate random using openssl_
@@ -85,7 +85,7 @@ openssl rand -base64 12 > /path/to/source/<passphrase-file>.txt
 ```
 
 
-### Example encrypt and decrypt
+#### Example encrypt and decrypt
 
 === "Encrypt"
     ```bash
