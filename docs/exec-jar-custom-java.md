@@ -17,15 +17,14 @@
 
 2. Add environment variable configuration settings for Java
     ```bash
-    cat <<EOF > /path/to/directory/<jar-file-name>.conf # (1)!
+    cat <<EOF > /path/to/directory/<jar-file-name>.conf
     JAVA_HOME=/path/to/java-home
     PATH=/path/to/java-home/bin:$PATH
     EOF
     ```
-    1.  without .jar extension
 3. Create symlink from jar file to SysVinit
     ```bash
-    sudo ln -s <jar-file-name> /etc/init.d/<service-name>
+    sudo ln -s <jar-file-name>.jar /etc/init.d/<service-name>
     ```
 4. Run the service
     ```bash
