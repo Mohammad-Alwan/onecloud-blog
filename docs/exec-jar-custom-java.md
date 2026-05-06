@@ -1,5 +1,5 @@
 
-## Run Java Application with a Specific Path in SysVinit on RHEL 6 (Spring Boot Fully Executable JAR)
+# Run Java Application with a Specific Path in SysVinit on RHEL 6 (Spring Boot Fully Executable JAR)
 !!! note
     In this case, the configuration is based on the code in the existing JAR file
 
@@ -17,7 +17,7 @@
 
 2. Add environment variable configuration settings for Java
     ```bash
-    cat <<EOF > /path/to/directory/<jar-file-name>.conf    _#without .jar_
+    cat <<EOF > /path/to/directory/<jar-file-name>.conf *#without .jar*
     JAVA_HOME=/path/to/java-home
     PATH=/path/to/java-home/bin:$PATH
     EOF
