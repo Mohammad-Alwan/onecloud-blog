@@ -92,7 +92,7 @@ openssl rand -base64 12 > /path/to/source/<passphrase-file>.txt
     gpg --encrypt --recipient-file "/path/to/source/<gpg-pub-file>" --output "<output>.gpg" "<file>.txt"
     ```
 
-=== "Encrypt"
+=== "Decrypt"
     ```bash
     gpg --batch --yes --pinentry-mode loopback --decrypt --passphrase-file "/path/to/source/<passhphrase-file>.txt" --output "<output>.txt" "<file>.gpg"
     ```
