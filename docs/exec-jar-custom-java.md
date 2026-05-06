@@ -22,7 +22,7 @@
     PATH=/path/to/java-home/bin:$PATH
     EOF
     ```
-3. Create symlink from jar file to SysVinit
+3. Create symlink from JAR file to SysVinit
     ```bash
     sudo ln -s <jar-file-name>.jar /etc/init.d/<service-name>
     ```
