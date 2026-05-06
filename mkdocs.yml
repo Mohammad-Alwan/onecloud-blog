@@ -36,6 +36,8 @@ nav:
     - extend-disk.md
     - os-failed.md
     - swap-not-found.md
+    - create-user-sftp.md
+    - creating-new-gpg.md
 
 markdown_extensions:
   - attr_list
