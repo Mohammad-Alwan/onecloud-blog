@@ -18,7 +18,7 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline
         name: Dark mode
-      primary: dark
+      primary: black
       accent: grey
 
     # Light Mode
