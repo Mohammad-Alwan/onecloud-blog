@@ -1,6 +1,5 @@
 ---
 date: 2026-02-20
-status: new
 ---
 
 # RHEL 10.1 OS stuck during boot (/dev/os/lv_swap does not exist)

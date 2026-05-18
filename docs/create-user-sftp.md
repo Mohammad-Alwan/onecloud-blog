@@ -4,36 +4,36 @@ date: '2026-05-04T22:35:01+07:00'
 !!! note
     In this case, the home directory of the user to be created and used for SFTP will have `root` as its owner and group.
 
-1. Create home directory
+### Create home directory
 ```bash
 mkdir /home/directory
 ```
 
-1. Create User
+### Create User
 ```bash
 sudo useradd -m -d /home/directory -s /bin/bash -c "COMMENT" <user>
 ```
 
-1. Create Key (in this case with PEM format, RSA type and specific number bits)
+### Create Key (in this case with PEM format, RSA type and specific number bits)
 ```bash
 sudo ssh-keygen -m PEM -t rsa -b 4096 -C "COMMENT"
 ```
 
-1. Create ssh directory
+### Create ssh directory
 ```bash
 sudo mkdir /home/directory/.ssh/ 
 sudo chown <user>:<user> /home/directory/.ssh/ 
 sudo chmod 700 /home/directory/.ssh/  
 ```
 
-1. Put the public key into the ~/.ssh/authorized_keys file.
+### Put the public key into the ~/.ssh/authorized_keys file.
 ```bash
 sudo echo "<public key>" > /home/directory/.ssh/ authorized_keys
 sudo chmod 600 /home/directory/.ssh/ authorized_keys
 sudo chown <user>:<suser> /home/directory/.ssh/ authorized_keys
 ```
 
-1. Add config fot SFTP in sshd config
+### Add config fot SFTP in sshd config
 ```vim
 ## Example
         Match User <user>
@@ -47,12 +47,12 @@ sudo chown <user>:<suser> /home/directory/.ssh/ authorized_keys
         PubkeyAuthentication yes
 ```
 
-#### Restart sshd service
+### Restart sshd service
 ```
 systemctl restart sshd.service
 ```
 
-#### Test sftp 
+### Test sftp 
 ```
 sftp -P <port> -i ./<private.key> <user>@<IP>
 ```

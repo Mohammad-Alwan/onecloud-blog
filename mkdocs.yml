@@ -8,6 +8,7 @@ theme:
   features:
     - navigation.indexes
     - navigation.footer
+    - navigation.expand
     - content.code.copy
     - content.tabs.link
     - content.code.annotate
@@ -17,7 +18,7 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline
         name: Dark mode
-      primary: indigo
+      primary: dark
       accent: grey
 
     # Light Mode

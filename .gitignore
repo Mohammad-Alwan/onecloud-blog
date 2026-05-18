@@ -120,6 +120,9 @@ assets-large/
 
 # mkdocs documentation
 /site
+docs/CA-from-another-file-key.md
+docs/cek-fs-aix.md
+docs/config-httpd-fpm.md
 
 # mypy
 .mypy_cache/

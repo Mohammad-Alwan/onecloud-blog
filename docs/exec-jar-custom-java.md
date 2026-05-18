@@ -1,3 +1,6 @@
+---
+status: new
+---
 
 # Run Java Application with a Specific Path in SysVinit on RHEL 6 (Spring Boot Fully Executable JAR)
 !!! note
