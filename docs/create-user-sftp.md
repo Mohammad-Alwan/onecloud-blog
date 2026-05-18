@@ -28,9 +28,9 @@ sudo chmod 700 /home/directory/.ssh/
 
 ### Put the public key into the ~/.ssh/authorized_keys file.
 ```bash
-sudo echo "<public key>" > /home/directory/.ssh/ authorized_keys
+sudo echo "<public key>" > /home/directory/.ssh/authorized_keys
 sudo chmod 600 /home/directory/.ssh/ authorized_keys
-sudo chown <user>:<suser> /home/directory/.ssh/ authorized_keys
+sudo chown <user>:<suser> /home/directory/.ssh/authorized_keys
 ```
 
 ### Add config fot SFTP in sshd config
